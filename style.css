@@ -1,0 +1,136 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+hr {
+  height: 1.5px;
+  border: none;
+  width: 84%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  padding-block: 1em;
+  background-color: #f55a5a;
+  color: #fff;
+}
+
+nav > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section:not(:last-child):after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  margin-top: 0.6em;
+  flex-basis: 100%;
+}
+
+.fa {
+  font-size: 1.8rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1.6em;
+  gap: 1.3em;
+}
+
+.card--img {
+  width: 33%;
+  height: 15em;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card--description {
+  margin-top: 1.3em;
+  width: 60%;
+}
+
+.card--description .fa {
+  font-size: 1.2rem;
+  color: #f55a5a;
+}
+
+.card--description > span {
+  margin-right: 0.3em;
+}
+
+.card--city,
+.card--map,
+.card--date {
+  font-size: 0.9rem;
+}
+
+.card--city {
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+
+.card--map {
+  color: #918e9b;
+  margin-left: auto;
+}
+
+.card--header {
+  margin-bottom: 0.6em;
+  color: #2b283a;
+}
+
+.card--info {
+  font-size: 0.8rem;
+  margin-top: 0.6em;
+  max-width: 90%;
+}
